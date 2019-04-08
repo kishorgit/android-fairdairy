@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+
+            android:title="Home" />
+        <item
+            android:id="@+id/subscriptions"
+
+            android:title="My Subscriptions" />
+        <item
+            android:id="@+id/wallet"
+
+            android:title="My Wallet" />
+        <item
+            android:id="@+id/vacations"
+            android:title="My Vacations" />
+        <item
+            android:id="@+id/view_bills"
+            android:title="View Bills" />
+        <item
+            android:id="@+id/products"
+            android:title="Products" />
+        <item
+            android:id="@+id/offers"
+            android:title="Offers" />
+
+
+    </group>
+
+    <group
+        android:id="@+id/menu_two"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/contactus"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/logout"
+            android:title="Log Out" />
+
+    </group>
+   <!-- <item android:title=" "
+        >
+        <menu>
+            <item
+            android:id="@+id/contactus"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/logout"
+            android:title="Log Out" />
+        </menu>
+    </item>-->
+</menu>

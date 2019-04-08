@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.registration_activity"
+    tools:showIn="@layout/activity_registration_activity"
+    android:background="@drawable/registration"
+  >
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:paddingTop="100dp"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fairdairy"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:text="SIGN UP"
+            android:textColor="@color/black_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:text="No Data Found From Server"
+            android:textColor="@color/view_line_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+
+            <Spinner
+                android:id="@+id/spinner_city_type"
+                style="@style/spinnerstyle"
+                android:background="@drawable/spinner_item_border"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center_horizontal"
+                />
+
+        <Spinner
+            android:id="@+id/spinner_locality"
+            style="@style/spinnerstyle"
+            android:background="@drawable/spinner_item_border"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <EditText
+            android:id="@+id/mobile_no"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/spinner_item_border"
+            android:maxLength="10"
+            android:hint="Mobile No."
+            android:inputType="number"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/referral_code"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/spinner_item_border"
+            android:maxLength="15"
+            android:hint="Referral Code ( Optional )"
+            android:inputType="text"
+            android:padding="10dp"/>
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/DarkSlateGray"
+            android:padding="@dimen/dp_5"
+            android:textSize="25sp"
+            android:text="NEXT"
+            android:textColor="#fff" />
+
+    </LinearLayout></ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.wallet_activity"
+    tools:showIn="@layout/activity_wallet_activity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linear_search_customer"
+        android:layout_below="@+id/tv_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:paddingRight="@dimen/dp_5"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Fair Dairy Wallet"
+                android:paddingLeft="@dimen/dp_10"
+                android:textColor="@color/black_color"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="₹ 100"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/dp_10"
+                android:textColor="@color/black_color"
+                ></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/addmoney_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingRight="@dimen/dp_10"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/addmoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Add Money to Wallet"
+                android:paddingLeft="@dimen/dp_10"
+                android:textColor="@color/roboto_calendar_month_font"/>
+            <TextView
+                android:id="@+id/addmoneylink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="nj"
+                android:paddingRight="@dimen/dp_10"
+                android:textColor="@color/roboto_calendar_month_font"
+                android:textAlignment="viewEnd"
+                android:gravity="end"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/partrow"
+        android:layout_below="@+id/linear_search_customer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_5"
+        android:background="@color/darkgreen"
+        android:layout_marginTop="20dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/movie_list"
+        android:layout_below="@+id/partrow"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/headerColor"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/row_padding_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/row_padding_vertical"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/emp_name"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="@color/black_color"
+            android:textSize="16sp"
+            android:text="Recents Transactions"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:id="@+id/start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/roboto_calendar_month_font"
+            android:textSize="16sp"
+            android:text="History"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/movie_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
+        />
+
+</RelativeLayout>

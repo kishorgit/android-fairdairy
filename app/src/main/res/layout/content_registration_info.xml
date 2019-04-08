@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.registration_info"
+    tools:showIn="@layout/activity_registration_info"
+    android:background="@drawable/registration"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/DarkSlateGray"
+        android:textColor="@color/white_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="SIGN UP"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"/>
+    <RelativeLayout
+        android:id="@+id/movie_list"
+        android:layout_below="@+id/tv_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/DarkSlateGray"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/row_padding_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/row_padding_vertical"
+     >
+        <TextView
+            android:id="@+id/emp_name"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white_color"
+            android:textSize="16sp"
+            android:text="Contact Number"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:id="@+id/mobileno"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white_color"
+            android:textSize="16sp"
+            android:text="9718910020"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/movie_list">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+          >
+
+            <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:maxLength="20"
+            android:hint="FIRST NAME"
+            android:inputType="text"
+            />
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_gravity="center_horizontal"
+                android:maxLength="20"
+                android:hint="LAST NAME"
+                android:inputType="text"
+                />
+            <EditText
+                android:id="@+id/altr_phoneno"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:maxLength="10"
+                android:hint="ALTERNATE PHONE NUMBER"
+                android:inputType="number"
+                android:layout_marginTop="@dimen/dp_10"
+                />
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_gravity="center_horizontal"
+                android:maxLength="20"
+                android:hint="ADDRESS"
+                android:inputType="text"
+                />
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:maxLength="40"
+                android:hint="EMAIL"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="@dimen/dp_10"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_gravity="center_horizontal"
+                android:text="Delivery Preferences"
+                android:textColor="@color/colorPrimary"
+                ></TextView>
+        <!--    <EditText
+                android:id="@+id/door_bell"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                android:layout_gravity="center_horizontal"
+                android:maxLength="20"
+                android:hint="DOORBELL"
+                android:inputType="text"
+
+               android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />-->
+            <Spinner
+                android:id="@+id/door_bell"
+                style="@style/spinnerstyle"
+                android:background="@drawable/spinner_item_border"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                />
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@color/DarkSlateGray"
+                android:padding="@dimen/dp_5"
+                android:text="NEXT"
+                android:textSize="25sp"
+                android:textColor="#fff" />
+
+
+
+        </LinearLayout></ScrollView>
+</RelativeLayout>

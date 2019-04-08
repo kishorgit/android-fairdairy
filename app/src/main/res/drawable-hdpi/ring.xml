@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape android:shape="ring" >
+            <solid android:color="#FF0000" />
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:innerRadiusRatio="4"
+            android:shape="ring"
+            android:thicknessRatio="9"
+            android:useLevel="false" >
+            <solid android:color="#FF0000" />
+            <size
+                android:height="48dip"
+                android:width="48dip" />
+        </shape>
+    </item>
+
+</layer-list>
+-->
+
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:innerRadius="@dimen/roboto_calendar_ring_size"
+    android:shape="ring"
+    android:thickness="2dp"
+    android:useLevel="false"
+    >
+
+    <solid android:color="@color/brown3" />
+
+</shape>
+
+<!-- <solid android:color="@color/roboto_calendar_current_day_ring" />-->

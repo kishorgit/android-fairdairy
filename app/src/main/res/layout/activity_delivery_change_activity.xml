@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.delivery_change_activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@drawable/cowfairdairy"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+        <TextView
+            android:id="@+id/currnetdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="31 December 2018"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_delivery_change_activity" />
+
+
+</android.support.design.widget.CoordinatorLayout>

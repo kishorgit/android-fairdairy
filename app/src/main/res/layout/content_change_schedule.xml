@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.delivery_confirmation"
+    tools:showIn="@layout/activity_change_schedule">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@color/white_color"
+                android:paddingRight="@dimen/dp_10">
+                <TextView
+                    android:id="@+id/admin_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="Amit"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black_color"/>
+                <TextView
+                    android:id="@+id/admin_addrs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:layout_gravity="center"
+                    android:text="C-54 Sector-23 Noida"
+                    android:textColor="@color/black_color"
+                    ></TextView>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler_view"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:paddingRight="@dimen/dp_10">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:text="Start Date"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:textColor="@color/black_color"/>
+                <TextView
+                    android:id="@+id/start_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:text=">"
+                    android:textColor="@color/skyblue"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:gravity="end"
+                    ></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:paddingRight="@dimen/dp_10">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:text="End Date"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:textColor="@color/black_color"/>
+                <TextView
+                    android:id="@+id/end_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:text=">"
+                    android:textColor="@color/skyblue"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:gravity="end"
+                    ></TextView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginBottom="20dp"
+                android:background="@color/DarkSlateGray"
+                android:padding="@dimen/dp_5"
+                android:text="CONFIRM CHANGE"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<resources>
+
+    <dimen name="layout_padding">10dp</dimen>
+    <dimen name="layout_margin_top">9dp</dimen>
+    <dimen name="button_height">30dp</dimen>
+    <dimen name="border_height">1dp</dimen>
+    <dimen name="border_padding">10dp</dimen>
+
+    <dimen name="view_height">1dp</dimen>
+    <dimen name="drawer_margin">35dip</dimen>
+
+    <dimen name="txt_size_small">12dip</dimen>
+    <dimen name="txt_size_normal">14dip</dimen>
+    <dimen name="txt_size_mid">16dip</dimen>
+    <dimen name="txt_size_large">18dip</dimen>
+    <dimen name="alertdialog_view_height">2dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!--roboto calender-->
+    <dimen name="roboto_calendar_padding">8dp</dimen>
+    <dimen name="roboto_calendar_month_margin_bottom">8dp</dimen>
+    <dimen name="roboto_calendar_week_margin_bottom">5dp</dimen>
+    <dimen name="roboto_calendar_day_of_the_month_background_size">40dp</dimen>
+    <dimen name="roboto_calendar_circle_size">4dp</dimen>
+    <dimen name="roboto_calendar_ring_size">18dp</dimen>
+    <dimen name="roboto_calendar_month_font">16sp</dimen>
+    <dimen name="roboto_calendar_day_of_week_font">16sp</dimen>
+    <dimen name="roboto_calendar_day_of_the_month_font">16sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <!--/roboto calender-->
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+
+
+    <dimen name="nav_header_height">176dp</dimen>
+
+    <dimen name="row_padding_vertical">5dp</dimen>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="thumbnail">40dp</dimen>
+    <dimen name="row_padding">10dp</dimen>
+    <dimen name="contact_name">15dp</dimen>
+    <dimen name="contact_number">12dp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+
+</resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.addvacation_activity"
+    tools:showIn="@layout/activity_addvacation_activity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/strtdate"
+        android:layout_below="@+id/duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:text="Start Date"
+            android:textSize="16sp"
+            android:paddingLeft="@dimen/dp_10"
+            android:textColor="@color/black_color"/>
+        <TextView
+            android:id="@+id/start_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:hint="07-03-2019"
+            ></TextView>
+
+        <!-- <EditText
+             android:id="@+id/start_date"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight=".5"
+             android:inputType="text"
+             android:focusable="false"
+             ></EditText>-->
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/enddate"
+        android:layout_below="@+id/strtdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingRight="@dimen/dp_10">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:text="End Date"
+            android:textSize="16sp"
+            android:paddingLeft="@dimen/dp_10"
+            android:textColor="@color/black_color"/>
+        <TextView
+            android:id="@+id/end_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:textColor="@color/black_color"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:hint="(Optional)"
+            ></TextView>
+        <!--  <EditText
+              android:id="@+id/end_date"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight=".5"
+              android:inputType="text"
+              android:focusable="false"
+              ></EditText>-->
+    </LinearLayout>
+
+   <!-- <LinearLayout
+        android:id="@+id/strtdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/dp_5">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Start Date"
+            android:paddingLeft="@dimen/dp_10"
+            android:textColor="@color/black_color"/>
+        <EditText
+            android:id="@+id/start_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:inputType="text"
+            android:focusable="false"
+            ></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/enddate"
+        android:layout_below="@+id/strtdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingRight="@dimen/dp_5">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="End Date"
+            android:paddingLeft="@dimen/dp_10"
+            android:textColor="@color/black_color"/>
+        <EditText
+            android:id="@+id/end_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:inputType="text"
+            android:focusable="false"
+            ></EditText>
+    </LinearLayout>-->
+
+
+    <Button
+        android:id="@+id/endvacation"
+        android:layout_below="@+id/enddate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/DarkSlateGray"
+        android:padding="@dimen/dp_5"
+        android:text="END VACATION"
+        android:textColor="#fff"
+
+        />
+
+    <Button
+        android:id="@+id/donevacation"
+        android:layout_below="@+id/endvacation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/DarkSlateGray"
+        android:padding="@dimen/dp_5"
+        android:text="DONE"
+        android:textColor="#fff"
+       />
+
+</RelativeLayout>

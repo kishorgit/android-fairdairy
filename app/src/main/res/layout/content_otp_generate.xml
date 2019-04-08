@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.otp_generate"
+    tools:showIn="@layout/activity_otp_generate"
+    android:background="@color/bg_tv_color">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:paddingTop="100dp">
+            <ImageView
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fairdairy"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Enter OTP"
+                android:textColor="@color/black_color"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/edt_otp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="@dimen/dp_10"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:maxLength="15"
+                android:hint="OTP"
+                android:inputType="text"
+                android:padding="10dp"/>
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:layout_marginTop="20dp"
+                android:background="@color/DarkSlateGray"
+                android:padding="@dimen/dp_5"
+                android:text="ENTER"
+                android:textColor="#fff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/dp_10"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:textAlignment="viewStart"
+                    android:layout_weight="1"
+                    android:text="Did not receive OTP ?"
+                    android:textColor="@color/DarkSlateGray"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                   />
+                <TextView
+                    android:id="@+id/resend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Resend"
+                    android:textColor="@color/DarkSlateGray"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="end"
+                    android:textAlignment="viewEnd"/>
+
+            </LinearLayout>
+
+        </LinearLayout></ScrollView>
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.sunaitestingapp.fragments.backhome_fragment">
+
+    <TextView
+        android:id="@+id/tv_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/darkgreen"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="Order Confirmation"
+        android:textColor="@color/white_color"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/ordertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_toolbar"
+        android:layout_marginTop="20dp"
+        android:text="Your order has been registered successfully."
+        android:textColor="@color/darkgreen"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/servetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ordertxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="We are looking forward serving you."
+        android:textColor="@color/darkgreen"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/backhome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/servetxt"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/DarkSlateGray"
+        android:padding="@dimen/dp_5"
+        android:text="BACK TO HOME"
+        android:textColor="#fff" />
+
+</RelativeLayout>

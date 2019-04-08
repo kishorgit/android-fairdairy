@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Fair Dairy</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login_activity">login_activity</string>
+    <string name="title_activity_delivery_confirmation">delivery_confirmation</string>
+    <string name="title_activity_record_payment">record_payment</string>
+    <string name="title_activity_admin_listing">admin_listing</string>
+    <string name="title_activity_change_schedule">change_schedule</string>
+    <string name="title_activity_registration_activity">registration_activity</string>
+    <string name="title_activity_otp_generate">otp_generate</string>
+    <string name="title_activity_registration_info">registration_info</string>
+    <string name="title_activity_calendar_activity">calendar_activity</string>
+    <string name="title_activity_fairdairycalendar">fairdairycalendar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="title_activity_subscription_activity">subscription_activity</string>
+    <string name="title_activity_vacation_activity">vacation_activity</string>
+    <string name="title_activity_addvacation_activity">addvacation_activity</string>
+    <string name="title_activity_backhome_activity">backhome_activity</string>
+    <string name="title_activity_delivery_change_activity">delivery_change_activity</string>
+    <string name="title_activity_productlist_activity">productlist_activity</string>
+    <string name="title_activity_wallet_activity">wallet_activity</string>
+    <string name="title_activity_productsublist_activity">productsublist_activity</string>
+</resources>

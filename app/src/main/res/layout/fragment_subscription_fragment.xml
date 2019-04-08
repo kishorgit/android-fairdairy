@@ -1,0 +1,552 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.sunaitestingapp.fragments.subscription_fragment"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/darkgreen"
+        android:textColor="@color/white_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Subscriptions"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_toolbar"
+        android:background="@color/white_color">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+  <!--  <LinearLayout
+        android:id="@+id/product_info"
+        android:layout_below="@+id/tv_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:paddingBottom="@dimen/row_padding_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/row_padding_vertical"
+        android:background="@color/delivery_rowcolor">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/product_image"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/circle_buff"
+            android:layout_weight="1"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:textColor="@color/black_color"
+                android:text="Cow Milk"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/price_per_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_weight=".5"
+                android:text="₹ 10"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>-->
+            <Spinner
+                android:id="@+id/spinproduct_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_color"/>
+
+            <LinearLayout
+                android:id="@+id/linear_days"
+                android:layout_below="@+id/spinproduct_info"
+                style="@style/linearltstyle"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@color/white_color"
+                >
+                <LinearLayout
+                    android:id="@+id/radio_days1"
+                    style="@style/radiogroupstyle"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="left"
+                   >
+
+                    <RadioButton
+                        android:id="@+id/daily"
+                        style="@style/radiostyle"
+                        android:hint="Daily"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/alternate_days1"
+                        style="@style/radiostyle"
+                        android:hint="Alternate Days"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/radio_days2"
+                    style="@style/radiogroupstyle"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                   >
+                    <RadioButton
+                        android:id="@+id/week_days"
+                        style="@style/radiostyle"
+                        android:hint="Week Days"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/select_days"
+                        style="@style/radiostyle"
+                        android:hint="Select days"/>
+                </LinearLayout>
+            </LinearLayout>
+    <LinearLayout
+        android:id="@+id/daysContainer"
+        android:layout_below="@+id/linear_days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_5"
+        android:background="@color/white_color"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:tag="dayOfTheWeekLayout7">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:tag="dayOfTheWeekText7"
+                android:text="S"
+                android:textSize="16sp"
+               />
+            <ImageView
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_10"
+                android:src="@drawable/circlegrey_day"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:tag="dayOfTheWeekText7"
+                android:text="1"
+                android:textColor="@color/black_color"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:tag="dayOfTheWeekLayout1"
+            android:background="@color/white_color">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:tag="dayOfTheWeekText1"
+                android:text="M"
+              />
+            <ImageView
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_10"
+                android:src="@drawable/circlegrey_day"
+                android:layout_gravity="center"/>
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:tag="dayOfTheWeekText7"
+                android:text="1"
+                android:textColor="@color/black_color"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:tag="dayOfTheWeekLayout2"
+            android:background="@color/white_color">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:tag="dayOfTheWeekText2"
+                android:text="T"
+               />
+            <ImageView
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_10"
+                android:src="@drawable/circlegrey_day"
+                android:layout_gravity="center"/>
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:tag="dayOfTheWeekText7"
+                android:text="1"
+                android:textColor="@color/black_color"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:tag="dayOfTheWeekLayout3"
+            android:background="@color/white_color">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:tag="dayOfTheWeekText3"
+                android:text="W"
+              />
+            <ImageView
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_10"
+                android:src="@drawable/circlegrey_day"
+                android:layout_gravity="center"/>
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:tag="dayOfTheWeekText7"
+                android:text="1"
+                android:textColor="@color/black_color"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:tag="dayOfTheWeekLayout4"
+            android:background="@color/white_color">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:tag="dayOfTheWeekText4"
+                android:text="T"
+               />
+            <ImageView
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_10"
+                android:src="@drawable/circlegrey_day"
+                android:layout_gravity="center"/>
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:tag="dayOfTheWeekText7"
+                android:text="1"
+                android:textColor="@color/black_color"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:tag="dayOfTheWeekLayout5"
+            android:background="@color/white_color">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:tag="dayOfTheWeekText5"
+                android:text="F"
+               />
+            <ImageView
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_10"
+                android:src="@drawable/circlegrey_day"
+                android:layout_gravity="center"/>
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:tag="dayOfTheWeekText7"
+                android:text="1"
+                android:textColor="@color/black_color"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:tag="dayOfTheWeekLayout6"
+            android:background="@color/white_color">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:tag="dayOfTheWeekText6"
+                android:text="S"
+              />
+            <ImageView
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_10"
+                android:src="@drawable/circlegrey_day"
+                android:layout_gravity="center"/>
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:tag="dayOfTheWeekText7"
+                android:text="1"
+                android:textColor="@color/black_color"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_addquantity"
+        android:layout_below="@+id/daysContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:padding="16dp"
+        android:background="@color/white_color"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_color"
+            android:text="Add Quantity"
+            android:layout_marginLeft="@dimen/dp_10"
+
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_sign"
+            android:layout_marginLeft="@dimen/dp_10"/>
+
+
+        <TextView
+            android:id="@+id/product_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_color"
+            android:text="1.2"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:maxLength="6"
+
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sub_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/minus_sign"
+            android:layout_marginLeft="@dimen/dp_5"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_below="@+id/linear_addquantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/roboto_calendar_month_font"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="DURATION"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/strtdate"
+        android:layout_below="@+id/duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+       >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:text="Start Date"
+            android:paddingLeft="@dimen/dp_10"
+            android:textColor="@color/black_color"/>
+        <TextView
+            android:id="@+id/start_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text=">"
+            android:textColor="@color/skyblue"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="end"
+            ></TextView>
+
+        <!-- <EditText
+             android:id="@+id/start_date"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight=".5"
+             android:inputType="text"
+             android:focusable="false"
+             ></EditText>-->
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/enddate"
+        android:layout_below="@+id/strtdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingRight="@dimen/dp_10">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:text="End Date"
+            android:paddingLeft="@dimen/dp_10"
+            android:textColor="@color/black_color"/>
+        <TextView
+            android:id="@+id/end_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text=">"
+            android:textColor="@color/skyblue"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="end"
+            ></TextView>
+      <!--  <EditText
+            android:id="@+id/end_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:inputType="text"
+            android:focusable="false"
+            ></EditText>-->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_below="@+id/enddate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/DarkSlateGray"
+        android:padding="@dimen/dp_5"
+        android:text="SAVE"
+        android:textColor="#fff"
+        android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_below="@+id/done"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/DarkSlateGray"
+            android:padding="@dimen/dp_5"
+            android:text="SUBMIT"
+            android:textColor="#fff"
+            android:textSize="20sp"/></LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.delivery_change_activity"
+    tools:showIn="@layout/activity_delivery_change_activity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white_color">
+
+          <!--  <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:background="@drawable/cowfairdairy">
+                <TextView
+                    android:id="@+id/tv_toolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="Delivery Changes"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_10"/>
+                <TextView
+                    android:id="@+id/currnetdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="31 December 2018"
+                    android:layout_gravity="center_horizontal"
+
+                    />
+            </LinearLayout>-->
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler_view"
+                />
+
+
+         <!--   <Button
+                android:id="@+id/updatebtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/DarkSlateGray"
+                android:padding="@dimen/dp_5"
+                android:text="UPDATE"
+                android:textColor="#fff"
+                android:textSize="20sp"/>-->
+
+            <Button
+                android:id="@+id/updatebtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/DarkSlateGray"
+                android:padding="@dimen/dp_5"
+                android:text="UPDATE"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

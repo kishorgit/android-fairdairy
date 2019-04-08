@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview_first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="90dp"
+        android:orientation="vertical"
+      >
+
+        <ImageView
+            android:id="@+id/img_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/cowfairdairy" />
+
+        <LinearLayout
+            android:id="@+id/robotoCalendarPicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/roboto_calendar_background"
+            android:orientation="vertical"
+           >
+
+            <include
+                layout="@layout/roboto_calendar_month_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/roboto_calendar_month_margin_bottom"
+                android:background="#FFF0F5"
+
+                />
+
+            <include
+                layout="@layout/roboto_calendar_week_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/roboto_calendar_month_margin_bottom" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/robotoCalendarPicker"
+            android:background="@color/border_color"
+
+            />
+        <!-- <include
+          android:id="@+id/container_inflate_activity_edit"
+          android:layout_height="wrap_content"
+          android:layout_width="fill_parent"
+          android:layout_below="@+id/divider"
+          android:layout_marginTop="10dp"
+          layout="@layout/inflate_activity_edit"
+          />-->
+        <include
+            android:id="@+id/container_inflate_monthly_summary"
+            layout="@layout/inflate_monthly_summary"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/bg_tv_color" />
+
+        <Button
+            android:id="@+id/manage_subs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/DarkSlateGray"
+            android:padding="@dimen/dp_5"
+            android:text="Manage Subscription"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>

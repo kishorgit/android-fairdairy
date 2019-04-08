@@ -1,0 +1,135 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionModeBackground">@color/black_color</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="textinpstyle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dp_10</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+
+        <item name="android:textColorHint">@color/black_color</item>
+        <item name="android:textSize">20sp</item>
+        />
+    </style>
+
+    <style name="edittextylestr" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">10</item>
+        <item name="android:maxLength">50</item>
+        <item name="android:inputType">text</item>
+
+        />
+
+
+    </style>
+
+    <style name="titletextStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="titletextactionStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColor">@color/black_color</item>
+
+    </style>
+
+
+    <style name="testviewquesstyle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/black_color</item>
+        />
+    </style>
+
+    <style name="spinnerstyle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">28dip</item>
+        <item name="android:background">@drawable/spinner_item_border</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+
+        />
+    </style>
+
+    <style name="RobotoCalendarMonthText">
+        <item name="android:textSize">@dimen/roboto_calendar_month_font</item>
+        <item name="android:textColor">@color/roboto_calendar_month_font</item>
+    </style>
+
+    <style name="RobotoCalendarMonthArrow">
+        <item name="android:tint">@color/roboto_calendar_month_arrow</item>
+    </style>
+
+    <style name="RobotoCalendarDayOfTheWeekText">
+        <item name="android:textSize">@dimen/roboto_calendar_day_of_week_font</item>
+        <item name="android:textColor">@color/roboto_calendar_day_of_the_month_font</item>
+    </style>
+
+    <style name="RobotoCalendarDayOfTheMonthText">
+        <item name="android:textSize">@dimen/roboto_calendar_day_of_the_month_font</item>
+        <item name="android:textColor">@color/roboto_calendar_day_of_the_month_font</item>
+    </style>
+
+    <style name="linearltstyle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/dp_10</item>
+        <item name="android:background">@color/linear_gray_back</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+        />
+    </style>
+
+    <style name="radiogroupstyle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:focusable">true</item>
+        <item name="android:orientation">horizontal</item>
+
+
+        />
+    </style>
+
+    <style name="radiostyle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black_color</item>
+
+        <item name="android:textSize">16sp</item>
+
+        />
+    </style>
+
+    <style name="NavigationTheme" parent="AppTheme">
+
+        <item name="android:layout_marginBottom">02dp</item>
+    </style>
+
+    <style name="DialogTheme" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="colorAccent">@color/green</item>
+
+    </style>
+
+
+</resources>

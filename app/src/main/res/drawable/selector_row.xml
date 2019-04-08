@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/blue" />
+        </shape>
+    </item>
+
+    <item android:state_pressed="false">
+        <shape>
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</selector>
+
+
+<!--
+
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    &lt;!&ndash; Color when the row is selected &ndash;&gt;
+    <item android:drawable="@color/view_light_gray" android:state_pressed="false" android:state_selected="true" />
+    &lt;!&ndash; Standard background color &ndash;&gt;
+    <item android:drawable="@color/rowColor" android:state_selected="false" />
+</selector>-->

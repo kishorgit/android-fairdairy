@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.delivery_confirmation"
+    tools:showIn="@layout/activity_delivery_confirmation">
+  <!--  <ImageView
+        android:id="@+id/img_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/cowfairdairy"/>
+    <TextView
+        android:id="@+id/tv_toolbar"
+        android:layout_below="@+id/img_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/skyblue"
+        android:textColor="@color/white_color"
+        android:textSize="20sp"
+        android:text="Name"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"/>-->
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_custname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Amit Singh"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:textColor="@color/black_color"/>
+                <TextView
+                    android:id="@+id/tv_custaddrs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="C-54,Sector-53,Noida"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:textColor="@color/black_color"
+                    android:layout_marginTop="@dimen/dp_5"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:paddingRight="@dimen/dp_5">
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Schedule Delivery"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:textColor="@color/black_color"/>
+                <TextView
+                    android:id="@+id/schedule_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="3.5 ltr"
+                    android:textColor="@color/black_color"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:paddingRight="@dimen/dp_5">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Actual Delivery"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:textColor="@color/black_color"/>
+                <EditText
+                    android:id="@+id/actual_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:hint="qyt"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    ></EditText>
+            </LinearLayout>
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/DarkSlateGray"
+                android:padding="@dimen/dp_5"
+                android:text="CONFIRM CHANGE"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

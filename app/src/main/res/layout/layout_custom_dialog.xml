@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+    <Button
+        android:id="@+id/loginscreen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/DarkSlateGray"
+        android:padding="@dimen/dp_10"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:text="Go To Login Screen" />
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="Test Date  :" />
+
+        <TextView
+            android:id="@+id/survey_date"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:hint="dd/mm/yy"
+            android:background="#d7ffa2"/>
+    </LinearLayout>-->
+    <!--<LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_vertical"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight=".3"
+               android:text="Name :" />
+
+           <EditText
+               android:id="@+id/et_name"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight=".7"
+               android:imeOptions="actionDone"
+               android:singleLine="true"
+               android:maxLength="50"/>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:gravity="center_vertical"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight=".3"
+
+               android:textStyle="bold"
+               android:text="Class:" />
+
+           <EditText
+               android:id="@+id/et_class"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight=".7"
+               android:imeOptions="actionDone"
+               android:digits="0123456789"
+               android:inputType="phone"
+               android:singleLine="true"
+               android:maxLength="2"/>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:gravity="center_vertical"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight=".3"
+
+               android:textStyle="bold"
+               android:text="Gender            " />
+
+           <RadioGroup
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginLeft="70dp"
+               android:id="@+id/radio_group"
+               android:layout_weight=".7"
+               >
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:hint="Male"
+                   android:id="@+id/radio_male"
+                   />
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="100dp"
+                   android:hint="Female"
+                   android:id="@+id/radio_female"/>
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="75dp"
+                   android:hint="Other."
+                   android:id="@+id/radio_other"/>
+           </RadioGroup>
+       </LinearLayout>
+      <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:gravity="center_vertical"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight=".3"
+
+               android:textStyle="bold"
+               android:text="School Type:" />
+
+           <RadioGroup
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginLeft="70dp"
+               android:id="@+id/school_group"
+               android:layout_weight=".7"
+               >
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:hint="Govt."
+                   android:id="@+id/school_gov"
+                   />
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="100dp"
+                   android:hint="Pvt."
+                   android:id="@+id/school_pvt"/>
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="90dp"
+                   android:hint="Other."
+                   android:id="@+id/school_other"/>
+           </RadioGroup>
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_vertical"
+           android:layout_marginTop="10dp"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight=".3"
+
+               android:textStyle="bold"
+               android:text="Age:" />
+
+           <EditText
+               android:id="@+id/et_age"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight=".7"
+               android:imeOptions="actionDone"
+               android:digits="0123456789"
+               android:inputType="phone"
+               android:singleLine="true"
+               android:maxLength="2"/>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_vertical"
+           android:layout_marginTop="10dp"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight=".3"
+               android:textStyle="bold"
+               android:text="Language:" />
+
+           <Spinner
+               android:id="@+id/spinner"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/spinner_item_border"
+               android:layout_weight=".7"
+             />
+       </LinearLayout>-->
+
+
+
+</LinearLayout>

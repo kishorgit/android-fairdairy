@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.backhome_activity"
+    tools:showIn="@layout/activity_backhome_activity">
+    <TextView
+        android:id="@+id/ordertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_toolbar"
+        android:layout_marginTop="20dp"
+        android:text="Your order has been registered successfully."
+        android:textColor="@color/darkgreen"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/servetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ordertxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="We are looking forward serving you."
+        android:textColor="@color/darkgreen"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/backhome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/servetxt"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/DarkSlateGray"
+        android:padding="@dimen/dp_5"
+        android:text="BACK TO HOME"
+        android:textColor="#fff" />
+
+</RelativeLayout>

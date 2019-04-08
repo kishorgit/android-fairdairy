@@ -1,0 +1,49 @@
+<RelativeLayout android:id="@+id/movie_list"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/delivery_rowcolor"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/row_padding_vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/row_padding_vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="2dp"
+    >
+    <TextView
+        android:id="@+id/walletdate"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="16sp"
+        android:text="15-12-2019"
+
+
+        />
+    <TextView
+        android:id="@+id/walletdesc"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="16sp"
+        android:text="Desc"
+
+
+        />
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        android:text="200"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+
+</RelativeLayout>
